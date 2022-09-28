@@ -1,0 +1,80 @@
+#signup {
+   
+    width: 97%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 60px;
+}
+#signup h3{
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 21px;
+    word-spacing: 1.5px;
+}
+#signup button{
+    width: 20%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+   border: 0.5px solid #333333;
+}
+
+#bonus {
+    width: 97%;
+    margin: auto;
+    position: relative;
+}
+
+#bonus img{
+    width: 100%;
+}
+#bonus div{
+    position: absolute;
+    display: block;
+    left: 28.48%;
+    top: 27.50%;
+    width: 53.48%;
+   font-size: 16px;
+   font-family: sans-serif;
+   line-height: 22px;
+}
+ #bonus a{
+    color: #333333;
+    text-decoration:underline;
+ }
+
+ #bonus p:nth-child(1){
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+ }
+ #bonus p:nth-child(2){
+    margin-top: 4px;
+    color: #333333;
+ }
+
+ #thread{
+    width: 97%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+ #thread > div{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+ }
+
+ #thread > div > div{
+    border: 1px solid crimson;
+    height: auto;
+ }
+ #thread > div > div img{
+    width: 90%;
+ }
