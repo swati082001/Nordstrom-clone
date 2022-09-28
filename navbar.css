@@ -32,14 +32,14 @@ body,html{
     margin-top: 15px;
 }
 #navbar{
-    border: 3px solid black;
+    
     width: 95%;
     margin: auto;
     height: auto;
 }
 
 #first{
-    border: 1px solid green;
+   
     width: 100%;
     height: 70px;
     padding-top: 20px;
@@ -56,6 +56,7 @@ body,html{
 
 #first > div:nth-child(1) {
     width: 20%;
+    height: auto;
 }
 #first > div:nth-child(1) img{
     width: 100%;
@@ -89,4 +90,26 @@ i{
     width: 30%;
     
 } 
+
+hr{
+    background-color: #333333;
+    height: 0.5px;
+}
+#second ul{
+    margin: 0px;
+}
+
+#second ul li{
+    display: inline-block;
+    
+    
+}
+#second li{
+   margin: 10px;
+    width: 93px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
 
