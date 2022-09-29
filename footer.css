@@ -1,0 +1,62 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+footer{
+    margin-top: 20px;
+}
+#foot-main{
+    
+    height: auto;
+    background-color: #f9f9f9 ;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: #514d4d;
+    padding: 20px 20px 0px 20px;
+}
+
+.foot-1{
+    
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    
+}
+
+
+.foot-2{
+    padding: 0;
+    display: inline-flex;
+    margin: 0 20px 0;
+    
+}
+.foot-2 p{
+    margin-right: 25px;
+    font-size: 15px;
+}
+
+i{
+    margin-right: 10px;
+}
+#footer-email{
+    margin-left: 60%;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 22px;
+}
+#footer-email button{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 60px 10px 60px;
+}
+#footer-email input{
+    border: 0.5px solid grey;
+    color: grey;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 100px 10px 5px;
+}

@@ -1,6 +1,12 @@
+body{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
 #signup {
    
-    width: 97%;
+    width: 95%;
     margin: auto;
     height: auto;
     text-align: center;
@@ -13,6 +19,10 @@
     font-size: 21px;
     word-spacing: 1.5px;
 }
+#signup a{
+   text-decoration: none;
+   color: #333333;
+}
 #signup button{
     width: 20%;
     background-color: white;
@@ -22,9 +32,13 @@
     line-height: 22px;
    border: 0.5px solid #333333;
 }
+#signup button:hover{
+   background-color: rgb(172, 167, 167);
+   
+}
 
 #bonus {
-    width: 97%;
+    width: 95%;
     margin: auto;
     position: relative;
 }
@@ -57,24 +71,187 @@
     color: #333333;
  }
 
- #thread{
-    width: 97%;
+ #thread,#cur-loving{
+    width: 95%;
     margin: auto;
     text-align: center;
     margin-bottom: 30px;
+    font-family: sans-serif;
+   line-height: 22px;
+   color: #333333;
+ }
+ #thread hr+h2{
+   font-size: 20px;
+   letter-spacing: 5px;
+   margin-top: 50px;
  }
 
  #thread > div{
-    border: 1px solid;
+   
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 100px;
  }
-
  #thread > div > div{
-    border: 1px solid crimson;
-    height: auto;
+   font-size: 16px;
+   font-family: sans-serif;
+   line-height: 22px;
+ }
+ #thread > div > div h3{
+     margin-top: 3px;
+ }
+ #thread a{
+  
+   color: #4c4a4a;
  }
  #thread > div > div img{
-    width: 90%;
+   width: 100%;
  }
+
+ #get-inspired,#pick-up,#personal-style,#black{
+    width: 95%;
+    margin: auto;
+   
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-top: 60px;
+ }
+
+#get-inspired h2,#shop-category h2,#cur-loving h2{
+   text-align: center;
+  color: #333333;
+   font-size: 20px;
+ letter-spacing: 3px;
+}
+.fashion{
+   margin-top: 50px;
+}
+ .fashion div{
+   position: absolute;
+   left: 67%;
+   top: 43%;
+    text-align: initial;
+    
+    
+}
+.fashion .mid{
+   position: absolute;
+   left: 67%;
+   top: 25%;
+    text-align: initial;
+    
+    
+}
+.fashion  a{
+   color: #333333;
+   margin-right: 25px;
+}
+.fashion{
+   width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+
+
+.fashion img,#pick-up img,#personal-style img,#black img{
+   width: 100%;
+}
+ 
+
+
+#pick-up h3{
+   font-size: 20px;
+   position: absolute;
+   left: 35%;
+   top: 25%;
+}
+#pick-up div:nth-child(3){
+   position: absolute;
+    left: 58%;
+    top: 25%;
+    font-size: 15px;
+
+}
+#pick-up div:nth-child(3) > a,#personal-style a{
+   margin-top: 5px;
+   color: #4b4848;
+}
+ .line{
+   width: 95%;
+   margin-top: 80px;
+   margin-bottom: 70px;
+}
+
+#personal-style > div {
+   width: 28%;
+   position: absolute;
+   top: 25%;
+   left: 10%;
+   line-height: 22px;
+   
+}
+
+#shop-category {
+   width: 95%;
+   margin: auto;
+   margin-bottom: 30px;
+   font-size: 16px;
+   line-height: 22px;
+   font-family: sans-serif;
+   margin-top: 60px;
+}
+ .grid{
+  
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   gap: 20px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+
+
+
+#black div{
+   
+   position: absolute;
+   color: whitesmoke;
+   left: 40%;
+   top: 20%;
+}
+#black p,#black h3{
+   margin-top: 5px;
+   margin-bottom: 15px;
+  
+}
+
+#black a{
+   color: whitesmoke;
+   margin-right: 25px;
+}
+#shop-category img{
+   width: 100%;
+}
+#shop-category{
+   text-align: center;
+}
+#cur-loving > div{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+   margin-top: 60px;
+   margin-bottom: 100px;
+}
+#cur-loving img{
+    width: 100%;
+}
