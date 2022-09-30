@@ -1,0 +1,133 @@
+*{
+    
+    font-family: sans-serif;
+    line-height: 22px;
+    color: #333333;
+    
+}
+
+.cart-container{
+    
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-container .cart-part{
+    
+    width: 70%;
+    padding: 20px;
+}
+.cart-container .cart-part h1,h2{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.cart-container .cart-part i{
+    margin-right: 10px;
+}
+.cart-container .cart-part span{
+    color: rgb(46, 46, 145);
+}
+
+.cart-container .other{
+   padding-left: 20px;
+    width: 25%;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.cart-container .other > div{
+   
+    height: auto;
+    display: flex;
+    margin: 20px 5px 20px 5px ;
+}
+.cart-container .other > div img{
+    width: 40%;
+}
+.cart-container .other div div{
+    width: 50%;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#cart-checkout{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#cart-checkout div:nth-child(2){
+    width: 35%;
+}
+#cart-checkout div:nth-child(2) button{
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+}
+.cloth-container > div{
+    display: flex;
+}
+.cloth-container #one{
+    width: 20%;
+}
+.cloth-container #one img{
+    width: 100%;
+}
+.cloth-container #two{
+    width: 40%;
+    margin-left: 20px;
+}
+.mencloth-container > div{
+    display: flex;
+}
+.mencloth-container #one{
+    width: 20%;
+}
+.mencloth-container #one img{
+    width: 100%;
+}
+.mencloth-container #two{
+    width: 40%;
+    margin-left: 20px;
+}
+.cloth-container input,.mencloth-container input{
+    width: 20px;
+    text-align: center;
+}
+.cloth-container .del,.mencloth-container .del{
+    width: 40%;
+    background-color: black;
+    color: white;
+   
+}
+.addQty{
+    border-radius: 50px;
+    background-color: white;
+    font-size: 20px;
+    
+    margin: 0px 10px 0px 10px;
+}
+
+.edit{
+   
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    margin-top: 30px;
+}
+.sub-edit{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+
+.sub-edit div img{
+   width: 100%;
+}
+
+
+

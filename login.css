@@ -31,5 +31,9 @@
     padding:10px;
    margin-top: 10px;
 }
+#login a{
+    text-decoration: none;
+    color: white;
+}
 
 

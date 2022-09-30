@@ -1,0 +1,78 @@
+
+body{
+    padding: 20px;
+}
+*{
+   
+    font-family: sans-serif;
+    line-height: 22px;
+    color: #333333;
+    
+}
+
+#nordstrom-img{
+    width: 15%;
+}
+.checkout-main{
+    width: 60%;
+    
+    margin: auto;
+    height: auto;
+    margin-top: 30px;
+}
+.checkout-main span{
+    color: grey;
+    font-weight: 400;
+    font-size: 16px;
+}
+.checkout-main h2{
+    margin-left: 20px;
+}
+.checkout-main i{
+    margin-right: 10px;
+}
+.form-info{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid grey;
+}
+.form-info2{
+    width: 42.5%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid grey;
+}
+#form-submit{
+    width: 40%;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+   margin-left: 30%;
+   background-color: black;
+   color: white;
+   border-radius: 5px;
+}
+table{
+    font-size: 16px;
+    width: 100%;
+    margin-top: 30px;
+}
+table thead th{
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+    background-color: #f8f8f8 ;
+}
+tbody tr td{
+    padding: 10px 30px 10px 30px;
+}
+#guidelines{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+
+}
