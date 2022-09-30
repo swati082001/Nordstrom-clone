@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART PAGE</title>
+    <script src="https://kit.fontawesome.com/7d347a4af9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-part">
+            <h1>Shopping bag</h1>
+            <p>Items in your bag are not on hold.</p>
+            <p class="gift"><i class="fas fa-gift"></i>choose a gift when you check out</p>
+            <hr>
+            <h2>
+                <i class="fas fa-truck-pickup"></i>Delivery to <span>India</span>
+            </h2>
+            <p>International Shipping</p>
+            <hr>
+            <div class="mencloth-container"></div>
+            <div class="cloth-container"></div>
+            <hr>
+            <div id="cart-checkout">
+                <div>
+                    <p>Accepted Payments Methods</p>
+                    <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i><i class="fab fa-cc-amex"></i><i class="fab fa-cc-amazon-pay"></i>
+                    <p>Need Help? Call 1.888.202.69696 or <span>chat with us</span></p>
+                    <span>Shipping Internationally?</span>
+                </div>
+                <div>
+                    <p>Subtotal: <span class="cart-price"></span></p>
+                    <hr>
+                    <button>Checkout</button>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="other">
+            <h3>People also viewed </h3>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/8df3bf3b-2f73-4863-b590-4da591c1a097.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <div>
+                    <p>Open edit</p>
+                    <h4>INR 6,599.00</h4>
+                    <p>Size-X-Small available</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/80b604dc-e1ae-4ad3-b54a-bbe8b98f5bbf.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838" alt="">
+                <div>
+                    <p>Nike</p>
+                    <h4>INR 11,999.00</h4>
+                   
+                </div>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/6582b16a-ed92-4c2f-a704-553ca5215302.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <div>
+                    <p>Top Shop</p>
+                    <h4>INR 5,599.00</h4>
+                    <p>Size-2 US available</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/da7bcc28-7fe4-43ed-8c30-7beeca72198b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <div>
+                    <p>Open edit</p>
+                    <h4>INR 6,599.00</h4>
+                    <p>Size-X-Small available</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/9bbaf1b4-5a62-4233-b8b8-53c42f1a17d2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <div>
+                    <p>Open edit</p>
+                    <h4>INR 5,191.00</h4>
+                    <p>Size-X-Small available</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="edit">
+        <h2>More From Open Edit</h2>
+        <div class="sub-edit">
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/726ee0e6-6da0-426b-ad62-26c733872822.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <p>Open edit</p>
+                <h4>INR 6,599.00</h4>
+                
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/4a912e6f-bac7-4558-9e68-b77700f5cdd1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <p>Open edit</p>
+                <h4>INR 6,599.00</h4>
+                
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/7e027993-dbe8-45ca-9507-a63ddafbee8f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <p>Open edit</p>
+                <h4>INR 6,599.00</h4>
+                
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/22e3f2a1-ae9c-43d1-ae38-9965bd97d4a9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <p>Open edit</p>
+                <h4>INR 6,599.00</h4>
+                
+            </div>
+            <div>
+                <img src="https://n.nordstrommedia.com/id/sr3/4f7ecb38-c53c-4577-b264-adff95abdeaa.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="">
+                <p>Open edit</p>
+                <h4>INR 6,599.00</h4>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let cartArr=JSON.parse(localStorage.getItem("boxValue")) || [];
+    let cartbody=document.querySelector(".mencloth-container");
+    display(cartArr);
+    
+
+    function display(cartArr){
+        cartbody.innerHTML="";
+        
+        cartArr.forEach(function(el,i){
+            
+        let box=document.createElement("div");
+        let one=document.createElement("div");
+        one.setAttribute("id","one")
+        let two=document.createElement("div");
+        two.setAttribute("id","two")
+        let image=document.createElement("img");
+        image.src=el.img_url;
+        //plus button
+        let addQty=document.createElement("button");
+        addQty.innerText="+";
+        addQty.setAttribute("class","addQty");
+        addQty.addEventListener("click",function(){
+        qty.value++;
+        price.innerText=el.price*qty.value;
+
+         })
+
+        //quantity
+       let qty=document.createElement("input");
+       qty.value=1;
+       qty.setAttribute("id","qty");
+
+        //minus button
+        let diffQty=document.createElement("button");
+        diffQty.innerText="-";
+        diffQty.setAttribute("class","addQty");
+        diffQty.addEventListener("click",function(){
+        if(qty.value>0){
+            qty.value--;
+        }else if(qty.value==0){
+            qty.value=qty.value;
+
+        }
+        price.innerText=+el.price*qty.value;
+        })
+         //delete
+         let remove=document.createElement("button");
+        remove.innerText="Delete Item";
+        remove.setAttribute("class","del");
+        remove.addEventListener("click",function(event){
+        event.target.parentNode.parentNode.remove();
+        removeD(i);
+
+        })
+    
+             
+        let boxName=document.createElement("h3");
+        boxName.innerText=el.name;
+        let boxDesc=document.createElement("p");
+        boxDesc.innerText=el.desc;
+        let price=document.createElement("h4");
+        price.innerText=+el.price;
+        
+        
+       cartbody.append(box);
+       box.append(one,two);
+       one.append(image);
+       two.append(boxName,boxDesc,price,addQty,qty,diffQty,remove)
+    
+    })
+
+    }
+    
+        function removeD(i){
+        cartArr.splice(i,1);
+        localStorage.setItem("boxValue",JSON.stringify(cartArr));
+        display(cartArr);
+        }
+
+
+
+    //women section
+    let cartArr2=JSON.parse(localStorage.getItem("WboxValue")) || [];
+    let body=document.querySelector(".cloth-container");
+    newDisplay(cartArr2);
+
+    function newDisplay(cartArr2){
+        document.querySelector(".cloth-container").innerHTML=" ";
+        cartArr2.forEach(function(el,i){
+        let box=document.createElement("div");
+        let one=document.createElement("div");
+        one.setAttribute("id","one")
+        let two=document.createElement("div");
+        two.setAttribute("id","two")
+        let image=document.createElement("img");
+        image.src=el.img_url;
+        //plus button
+        let addQty=document.createElement("button");
+        addQty.innerText="+";
+        addQty.setAttribute("class","addQty");
+        addQty.addEventListener("click",function(){
+        qty.value++;
+        price.innerText=el.price*qty.value;
+
+         })
+
+        //quantity
+       let qty=document.createElement("input");
+       qty.value=1;
+       qty.setAttribute("id","qty");
+
+        //minus button
+        let diffQty=document.createElement("button");
+        diffQty.innerText="-";
+        diffQty.setAttribute("class","addQty");
+        diffQty.addEventListener("click",function(){
+        if(qty.value>0){
+            qty.value--;
+        }else if(qty.value==0){
+            qty.value=qty.value;
+
+        }
+        price.innerText=+el.price*qty.value;
+        })
+
+        //delete
+        let remove=document.createElement("button");
+        remove.innerText="Delete Item";
+        remove.setAttribute("class","del");
+       remove.addEventListener("click",function(event){
+        event.target.parentNode.parentNode.remove();
+        
+        removeData(i);
+        newDisplay(cartArr2);
+
+        })
+    
+             
+        let boxName=document.createElement("h3");
+        boxName.innerText=el.name;
+        let boxDesc=document.createElement("p");
+        boxDesc.innerText=el.desc;
+        let price=document.createElement("h4");
+        price.innerText=+el.price;
+        
+
+        body.append(box);
+       box.append(one,two);
+       one.append(image);
+       two.append(boxName,boxDesc,price,addQty,qty,diffQty,remove)
+    
+    });
+
+    }
+    
+    function removeData(i){
+        
+    cartArr2.splice(i,1);
+    localStorage.setItem("WboxValue",JSON.stringify(cartArr2));
+    newDisplay(cartArr2)
+   }
+   
+</script>

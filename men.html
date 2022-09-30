@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENS PAGE</title>
+    <link rel="stylesheet" href="men.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+           <p>Home / Men</p>
+            <ul>
+                <li><a href="#">Size</a></li>
+                <li><a href="#">Color</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Length</a></li>
+                <li><a href="#">Material</a></li>
+                <li><a href="#">Neckstyle</a></li>
+                <li><a href="#">Ocassion</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Sleeve Length</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="head">
+                <img src="https://n.nordstrommedia.com/id/9042fc89-51c6-4ba2-b5ca-e26279fc8453.jpeg?h=417&w=1334" alt="">
+                <div class="fillup">
+                    <h2>Absolutely Classic</h2>
+                    <p>Keep your 100K Tresn by adding some new pieces each season. Want an expert opinion? Free style help is available anytime, in stores and online.</p>
+                    <a href="#">Blazers & Sports Coats</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Pants</a>
+                    <a href="#">Style Help</a>
+                </div>
+
+            </div>
+            
+            <div class="tags">
+                <h2>Women's Clothing</h2>
+                <div class="sub-tags">
+                    <ul>
+                        <li> <a href="#">All Clothing</a></li>
+                        <li><a href="#">Activewear</a></li>
+                        <li><a href="#">Blazers,Suits & Seperates</a></li>
+                        <li><a href="#">Coats & Jackets</a></li>
+                        <li><a href="#">Dress Shirts</a></li>
+                        <li><a href="#">Dresspants</a></li>
+                        <li><a href="#">Jeans & Denims</a></li>
+                        <li><a href="#">Joggers </a></li>
+                        <li><a href="#">Pajamas & Loungewear</a></li>
+
+                    </ul>
+                </div>
+               
+
+            </div>
+            <!-- <div class="num">
+                <p>5600 items</p>
+                <select name="" id="filter">
+                    <option value="sort by featured">SORT BY FEATURED</option>
+                    <option value="sort by high to low">SORT BY HIGH TO LOW</option>
+                    <option value="sort by low to high">SORT BY LOW TO HIGH</option>
+                </select>
+
+            </div> -->
+            <div class="mencloth-container">
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    let boxArr=JSON.parse(localStorage.getItem("boxValue"))|| [];
+     let MensData = [
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/78f36358-f844-44d1-9ffb-0a98cbabab13.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"BARBOUR",
+            desc: "Men's Vital Waxed Cotton Jacket",
+            price: "11,435",
+            str_price:"30,987"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/ce115d23-7a96-4945-85ab-9271c5d9e39a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme confort sleep pants",
+            price: "1877.56 ",
+            str_price:"2358.09"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/d15fc7da-4df2-4029-8fed-aabc8c34694f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme comfort jersey sleep hoodie",
+            price: "2347",
+            str_price:"3645.56"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/ce115d23-7a96-4945-85ab-9271c5d9e39a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme confort sleep pants",
+            price: "3544",
+            str_price:"7896 "
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/713fa81b-9faf-409c-8853-cd7b99142ce9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"Nike",
+            desc: "Dry 3-pack everyday cushion crew socks",
+            price: "1566",
+            str_price:"2366"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/df4b355a-3f26-4e9e-b917-32d5302cc75a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"Treasure & Bond",
+            desc: "Thermal Crewneck Shirt",
+            price: "1677.78",
+            str_price:"4567.98 "
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/78f36358-f844-44d1-9ffb-0a98cbabab13.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"BARBOUR",
+            desc: "Men's Vital Waxed Cotton Jacket",
+            price: "11,435",
+            str_price:"30,986"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/ce115d23-7a96-4945-85ab-9271c5d9e39a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme confort sleep pants",
+            price: "3456 ",
+            str_price:"8674"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/78f36358-f844-44d1-9ffb-0a98cbabab13.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"BARBOUR",
+            desc: "Men's Vital Waxed Cotton Jacket",
+            price: "11,435 ",
+            str_price:"30,498"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/d15fc7da-4df2-4029-8fed-aabc8c34694f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme comfort jersey sleep hoodie",
+            price: "1233.78",
+            str_price:"2356"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/df4b355a-3f26-4e9e-b917-32d5302cc75a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"Treasure & Bond",
+            desc: "Thermal Crewneck Shirt",
+            price: "1800.89",
+            str_price:"2365.78"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/ce115d23-7a96-4945-85ab-9271c5d9e39a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"POLO RALPH LAUREN",
+            desc: "Supreme confort sleep pants",
+            price: "4689",
+            str_price:"7896"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/713fa81b-9faf-409c-8853-cd7b99142ce9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"Nike",
+            desc: "Dry 3-pack everyday cushion crew socks",
+            price: "1566 ",
+            str_price:"2300"
+        },
+        {
+            img_url:"https://n.nordstrommedia.com/id/sr3/78f36358-f844-44d1-9ffb-0a98cbabab13.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+            name:"BARBOUR",
+            desc: "Men's Vital Waxed Cotton Jacket",
+            price: "11,456",
+            str_price:"36,098"
+        },
+
+         ];
+         MensData.forEach(function(el){
+            let box=document.createElement("div");
+            let image=document.createElement("img");
+            image.src=el.img_url;
+             
+            let boxName=document.createElement("h3");
+             boxName.innerText=el.name;
+             let boxDesc=document.createElement("p");
+             boxDesc.innerText=el.desc;
+            let price=document.createElement("h4");
+            price.innerText="INR"+" "+el.price;
+            let Strprice=document.createElement("h5");
+            Strprice.innerText="INR"+" "+el.str_price;
+            let btn=document.createElement("button");
+            btn.innerText="Add to Cart";
+            btn.addEventListener("click",function(){
+             btnClicked(el);
+             })
+
+
+            document.querySelector(".mencloth-container").append(box);
+           box.append(image,boxName,boxDesc,price,Strprice,btn);
+         })
+
+         function btnClicked(el){
+         boxArr.push(el);
+         localStorage.setItem("boxValue",JSON.stringify(boxArr));
+   
+ 
+         }
+</script>
