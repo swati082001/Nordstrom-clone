@@ -255,3 +255,344 @@ body{
 #cur-loving img{
     width: 100%;
 }
+.cards{
+  
+   width: 95%;
+   margin: auto;
+   height: auto;
+   font-size: 16px;
+   font-family: sans-serif;
+   line-height: 22px;
+   margin-top: 60px;
+}
+.cards p{
+   color: #333333;
+}
+.cards .grid{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   gap: 20px;
+   
+   height: auto;
+   margin-top: 20px;
+}
+.cards h2{
+   
+   margin-bottom: 10px;
+   font-weight: 700;
+}
+
+.grid img{
+   width: 100%;
+   margin-bottom: 5px;
+   background-color: #c2c2cb;
+}
+.grid p,.grid span,.grid h3{
+   margin-top: 0px;
+   margin-bottom: 2px;
+  
+}
+.grid h3{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+/* medium screens */
+@media all and (min-width:761px) and (max-width:1024px){
+   
+#signup h3{
+   line-height: 15px;
+   font-size: 16px;
+}
+
+#signup button{
+   width: 25%;
+   padding: 5px;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+#bonus div{
+   left: 30%;
+   top: 5%;
+   width: 52%;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#bonus p:nth-child(1){
+   margin-bottom: 0px;
+   font-size: 12px;
+  
+}
+#bonus p:nth-child(2){
+   margin-top: 0px; 
+}
+
+#thread,#cur-loving{
+   margin-bottom: 10px;
+  line-height: 15px;
+  
+}
+#thread hr+h2{
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+#thread > div{
+   gap: 20px;
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+#thread > div > div{
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#get-inspired,#pick-up,#personal-style,#black{
+   margin-bottom: 20px;
+   font-size: 12px;
+   line-height: 15px;
+   margin-top: 30px;
+}
+
+#get-inspired h2,#shop-category h2,#cur-loving h2{
+  font-size: 16px;
+ letter-spacing: 3px;
+}
+
+.fashion{
+  margin-top: 20px;
+}
+.fashion div{
+  font-size: 12px;
+  left: 67%;
+  top: 43%;
+}
+.fashion{
+   margin-bottom: 20px;
+   font-size: 12px;
+   line-height: 15px;
+   margin-top: 30px;
+}
+
+#pick-up h3{
+  font-size: 14px;
+  left: 30%;
+}
+#pick-up div:nth-child(3){
+   left: 58%;
+   top: 18%;
+   font-size: 12px;
+}
+#pick-up div:nth-child(3) > a,#personal-style a{
+  margin-top: 2px;
+}
+.line{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#personal-style > div {
+  width: 40%;
+  top: 18%;
+  left: 7%;
+  line-height: 15px;
+}
+
+#shop-category {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 30px;
+}
+.grid{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#black p,#black h3{
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+#black a{
+  margin-right: 20px;
+}
+
+#cur-loving > div{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.cards{
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 30px;
+}
+
+.cards h2{
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+
+.grid p,.grid span,.grid h3{
+ font-size: 14px;
+}
+
+}
+
+/* small screens */
+@media all and (min-width:320px) and (max-width:760px){
+     
+#signup h3{
+   line-height: 12px;
+   font-size: 12px;
+}
+
+#signup button{
+   width: 25%;
+   padding: 3px;
+   font-size: 8px;
+   line-height: 15px;
+}
+
+#bonus div{
+   left: 30%;
+   top: 5%;
+   width: 52%;
+  font-size: 8px;
+  line-height: 8px;
+}
+
+#bonus p:nth-child(1){
+   margin-bottom: 0px;
+   font-size: 8px;
+  
+}
+#bonus p:nth-child(2){
+   margin-top: 0px; 
+}
+
+#thread,#cur-loving{
+   margin-bottom: 10px;
+  line-height: 15px;
+  
+}
+#thread hr+h2{
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+#thread > div{
+   gap: 20px;
+   margin-top: 15px;
+   margin-bottom: 25px;
+}
+#thread > div > div{
+  font-size: 8px;
+  line-height: 10px;
+}
+
+#get-inspired,#pick-up,#personal-style,#black{
+   margin-bottom: 10px;
+   font-size: 8px;
+   line-height: 10px;
+   margin-top: 15px;
+}
+
+#get-inspired h2,#shop-category h2,#cur-loving h2{
+  font-size: 10px;
+ letter-spacing: 2px;
+}
+#get-inspired p,#shop-category p,#cur-loving p{
+   font-size: 10px;
+  letter-spacing: 1px;
+ }
+
+
+.fashion{
+  margin-top: 10px;
+}
+.fashion div{
+  font-size: 8px;
+  left: 67%;
+  top: 43%;
+}
+.fashion{
+   margin-bottom: 10px;
+   font-size: 8px;
+   line-height: 10px;
+   margin-top: 15px;
+}
+
+#pick-up h3{
+  font-size: 10px;
+  left: 30%;
+}
+#pick-up div:nth-child(3){
+   left: 58%;
+   top: 18%;
+   font-size: 8px;
+}
+#pick-up div:nth-child(3) > a,#personal-style a{
+  margin-top: 2px;
+}
+.line{
+  margin-top: 25px;
+  margin-bottom: 20px;
+  height: 0.5px;
+}
+
+#personal-style > div {
+  width: 40%;
+  top: 18%;
+  left: 7%;
+  line-height: 10px;
+}
+
+#shop-category {
+  margin-bottom: 10px;
+  font-size: 8px;
+  line-height: 10px;
+  margin-top: 15px;
+}
+.grid{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#black p,#black h3{
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+#black a{
+  margin-right: 10px;
+}
+
+#cur-loving > div{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.cards{
+  font-size: 8px;
+  line-height: 10px;
+  margin-top: 15px;
+}
+
+.cards h2{
+  font-size: 7px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+
+.grid p,.grid span,.grid h3{
+ font-size: 7px;
+}
+
+}

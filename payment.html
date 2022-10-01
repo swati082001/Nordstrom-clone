@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT PAGE</title>
+    <script src="https://kit.fontawesome.com/7d347a4af9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" type="image/x-icon" href="https://n.nordstrommedia.com/id/169f9507-47b3-44bc-9ad4-9244fe191523.png">
+</head>
+<body>
+    <img id="nordstrom-img" src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg" alt="">
+    <div class="pay-main">
+        <hr>
+        <h2><i class="fas fa-lock"></i>Secure Checkout <span>powered by Borderfree</span></h2>
+        <p>Already have a Borderfree account? Click here.</p>
+        <hr>
+        <h2>1.Delivery</h2>
+        <div class="information"></div>
+        <hr>
+        <h2>2.Payment</h2>
+        <p><i class="fas fa-check-square"></i>My billing address is the same as my delivery address</p>
+        <p class="credit">
+            Credit or Debit Card
+             <img src="https://t4.ftcdn.net/jpg/04/06/75/39/240_F_406753914_SFSBhjhp6kbHblNiUFZ1MXHcuEKe7e7P.jpg" alt="">
+        </p>
+        <div>
+            
+        </div>
+        <form id="payment-form" action="https://super-quokka-4c1717.netlify.app/">
+            <input class="full" id="payname" type="text" placeholder="Full Name">
+            <input class="full"type="Number"id="cardnum" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+             name=""  maxlength="16" placeholder="Card Number"><br>
+            <label for="">Expiry Date:</label><br>
+            <select id="month" class="half" name='expireMM' id='expireMM'>
+                <option value=''>Month</option>
+                <option value='01'>January</option>
+                <option value='02'>February</option>
+                <option value='03'>March</option>
+                <option value='04'>April</option>
+                <option value='05'>May</option>
+                <option value='06'>June</option>
+                <option value='07'>July</option>
+                <option value='08'>August</option>
+                <option value='09'>September</option>
+                <option value='10'>October</option>
+                <option value='11'>November</option>
+                <option value='12'>December</option>
+            </select> 
+            <select id="year" class="half" name='expireYY' id='expireYY'>
+                <option value=''>Year</option>
+                <option value='20'>2020</option>
+                <option value='21'>2021</option>
+                <option value='22'>2022</option>
+                <option value='23'>2023</option>
+                <option value='24'>2024</option>
+            </select> 
+            
+             <input id="cvv" class="half"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+             type = "number" min="1" maxlength="3" placeholder="CVV"/>
+             <input class="submit-payment" type="submit" value="Place Order >>">
+             <div class="place-order">
+                
+                <p>This order total is 100% guaranteed. There will be no additional charges due upon receipt.</p>
+            </div>
+        </form>
+        
+        <hr style="border-top: dotted 1px;" /> 
+
+        <p class="light"><i class="fas fa-check-square"></i>Send me electronic or mail offers from Borderfree. You may opt out at any time.</p>
+        <p class="light"><i class="fas fa-check-square"></i>Send me electronic or mail offers from Nordstrom. You may opt out at any time.</p>
+         <a href="otp.html"><button class="submit-payment">Get OTP</button></a>
+        <hr>
+        <div id="guidelines">
+
+            <p ">By placing your order, you agree to the Terms & Conditions and Privacy Policy of Boderfree, a Global-e company,Nordstrom’s international fulfilment service. Borderfree is an online merchant that is located at 200 West 41st Street, New York, NY 10036, US</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+     let chkDetails=JSON.parse(localStorage.getItem("checkout-details")) ;
+     let addInfo=document.querySelector(".information"); 
+        for(let el in chkDetails){
+            let addName=document.createElement("p");
+            addName.innerText=chkDetails[el];
+           addInfo.append(addName);
+        }
+
+
+
+     document.querySelector("#payment-form").addEventListener("submit",function(){
+        event.preventDefault();
+        let form={
+            fullname:document.querySelector("#payname").value,
+            cardnum:document.querySelector("#cardnum").value,
+            month:document.querySelector("#month").value,
+            year:document.querySelector("#year").value,
+            cvv:document.querySelector("#cvv").value
+        }
+       
+
+       if(form.fullname=="" || form.cardnum=="" || form.month=="" || form.year=="" || form.cvv=="" ){
+        alert("Please fill all the details");
+       }else{
+        
+          alert("Otp Sent Successfully");
+       }
+    })
+</script>
+

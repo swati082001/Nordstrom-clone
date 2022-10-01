@@ -7,10 +7,12 @@
     <title>CHECKOUT PAGE</title>
     <script src="https://kit.fontawesome.com/7d347a4af9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/x-icon" href="https://n.nordstrommedia.com/id/169f9507-47b3-44bc-9ad4-9244fe191523.png">
 </head>
 <body>
     <img id="nordstrom-img" src="https://n.nordstrommedia.com/alias/nordstrom-logo.svg" alt="">
     <div class="checkout-main">
+        <hr>
         <h2><i class="fas fa-lock"></i>Secure Checkout <span>powered by Borderfree</span></h2>
         <p>Already have a Borderfree account? Click here.</p>
         <hr>
@@ -26,7 +28,7 @@
             <input type="text"class="form-info2" name="" id="region" placeholder="Region">
             <input type="Number" class="form-info2"name="" id="ph" placeholder="Phone">
             <input type="text"class="form-info2" name="" id="country" placeholder="Country">
-            <input type="submit" name="" id="form-submit" value="Continue >>">
+            <input type="submit" name="" class="form-submit" value="Continue >>">
         </form>
         <table>
             <thead>
@@ -56,7 +58,10 @@
                     <td>INR 3,043</td>
                 </tr>
             </tbody>
-        </table>
+        </table> 
+        <div>
+            <a href="payment.html"><button class="form-submit">Go To Payment >></button></a>
+        </div>
           <hr>
           <h2>2.Payment</h2>
           <hr>
@@ -69,27 +74,30 @@
 </html>
 
 
-<script>
+<script> 
+     
       document.querySelector("form").addEventListener("submit",function(){
         event.preventDefault();
+        let email=document.querySelector("#femail").value;
+        let lastname=document.querySelector("#lname").value;
+        let phone=document.querySelector("#ph").value;
         let form={
-            email:document.querySelector("#femail").value,
+        
             fname:document.querySelector("#fname").value,
-            lname:document.querySelector("#lname").value,
             address:document.querySelector("#add").value,
             address2:document.querySelector("#add2").value,
             pin:document.querySelector("#pin").value,
             city:document.querySelector("#city").value,
             region:document.querySelector("#region").value,
-            phone:document.querySelector("#ph").value,
             country:document.querySelector("#country").value
 
         }
        
 
-       if(form.email=="" || form.fname=="" || form.lname=="" || form.address=="" || form.address2=="" || form.pin=="" || form.city=="" || form.region=="" || form.phone=="" || form.country==""){
+       if(email=="" || form.fname=="" || lastname=="" || form.address=="" || form.address2=="" || form.pin=="" || form.city=="" || form.region=="" || phone=="" || form.country==""){
         alert("Please fill all the details");
        }else{
+            
            localStorage.setItem("checkout-details",JSON.stringify(form));
        }
     })

@@ -47,7 +47,7 @@ body{
     color: grey;
     border: 1px solid grey;
 }
-#form-submit{
+.form-submit{
     width: 40%;
     text-align: center;
     padding: 10px 30px 10px 30px;
@@ -75,4 +75,94 @@ tbody tr td{
     margin: auto;
     font-size: 12px;
 
+}
+
+
+/* medium screens */
+@media all and (min-width:761px) and (max-width:1024px){
+    *{
+       
+        line-height: 15px;
+    }
+    
+    .checkout-main{
+        width: 70%;
+    }
+    .checkout-main span{
+        font-size: 12px;
+    }
+    
+    .form-info{
+        font-size: 12px;
+        padding: 7px;
+        margin: 7px;
+    }
+    .form-info2{
+        width: 41%;
+        padding: 7px;
+        margin: 7px;
+
+    }
+    .form-submit{
+       font-size: 12px;
+    }
+    table{
+        font-size: 12px;
+    }
+    table thead th{
+        font-size: 12px;
+    }
+   
+    #guidelines{
+        font-size: 10px;
+    
+    }
+    
+}
+
+
+/* small screens */
+@media all and (min-width:320px) and (max-width:760px){
+    *{
+        line-height: 10px;
+    }
+    
+    .checkout-main{
+        width: 80%;
+    }
+    .checkout-main span{
+        font-size: 8px;
+    }
+    
+    .form-info{
+        font-size: 8px;
+        padding: 6px;
+        margin: 6px;
+    }
+    .form-info2{
+        font-size: 8px;
+        width: 40%;
+        padding: 6px;
+        margin: 6px;
+
+    }
+    .form-submit{
+       font-size: 8px;
+       padding: 6px;
+    }
+    table{
+        font-size: 8px;
+    }
+    table thead th{
+        font-size: 8px;
+    }
+   
+    #guidelines{
+        font-size: 8px;
+    
+    }
+    .checkout-main h2{
+       font-size: 12px;
+    }
+    
 }
